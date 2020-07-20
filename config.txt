@@ -1,0 +1,7 @@
+ImageId=ami-0334fa6d0c950747c
+MinCount=1
+MaxCount=1
+KeyName=cen7
+InstanceType=t3.micro
+group_id=sg-021767944e6b00bcb
+SubnetId=subnet-3fa04772
