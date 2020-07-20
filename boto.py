@@ -36,7 +36,6 @@ def config():
 
 
 def create_ins(imageid, mincount, maxcount, keyname, instancetype, groupid, subnet):
-    print(imageid)
     ec2 = boto3.resource('ec2', region_name="eu-north-1")
     instance = ec2.create_instances(ImageId=imageid, MinCount=int(mincount), MaxCount=int(maxcount),
                                     KeyName=keyname, InstanceType=instancetype, SecurityGroupIds=[groupid], SubnetId=subnet)
